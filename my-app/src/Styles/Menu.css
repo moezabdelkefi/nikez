@@ -1,0 +1,31 @@
+.menuDrop{
+  position: absolute;
+  color: black;
+  background-color: aliceblue;
+  list-style: none;
+  text-align: center;
+  width: 100px;
+  padding-inline-start: 0px;
+  padding: 10px 0;
+  z-index: 1000;
+  transition: 0.2s;
+}
+.menuDropLi:hover {
+  background-color: #000;
+  color: aliceblue;
+  transition: 0.5s;
+}
+.menuDropLi{
+  padding: 5px 10px 10px 10px;
+  cursor: pointer;
+  color: black; 
+}
+.menuButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  
+}

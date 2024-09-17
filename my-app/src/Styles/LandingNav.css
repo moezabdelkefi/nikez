@@ -1,0 +1,47 @@
+.LandingNav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.ulLanding {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 40px;
+    list-style-type: none;
+    position: absolute;
+    left: 2%;
+    justify-content: center;
+    align-items: center;
+}
+.ulLanding img {
+    width: 100px;
+}
+.ulLanding .liLanding {
+    color: white;
+    font-style: initial;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.ulLanding .liLanding:hover {
+    scale: 1.1;
+}
+.navLandingButton {
+    position: relative;
+    left: 42%;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navLandingButton:hover {
+    scale: 1.05;
+    background-color: antiquewhite;
+}

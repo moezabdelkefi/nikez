@@ -1,0 +1,13 @@
+.snip141887 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .MyShoe {
+    margin-top: 20px;
+  }

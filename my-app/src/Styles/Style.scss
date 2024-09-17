@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #1d1a20;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+  .ButtonsLS {
+    display: flex;
+    flex-direction: row;
+    .Login {
+      width: 100px;
+      height: 40px;
+      margin-left: 20px ;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    .Signup {
+      width: 100px;
+      height: 40px;
+      margin-left: 20px ;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        scale: 1.1;
+    }
+    }
+  }
+  .navItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .LogoImage {
+    width: 100px;
+  }
+  .LoginSignup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .userContainer {
+      width: 100px;
+    }
+  }
+  .Ulcontainer {
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+
+    .NavUl{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      .LiNav{
+        list-style-type: none;
+        transition: 0.2s;
+        a {
+          margin: 40px;
+          color: #fff;
+          cursor: pointer;
+        }
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+
+}

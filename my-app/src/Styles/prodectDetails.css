@@ -1,0 +1,23 @@
+.maylike-products-wrapper {
+    padding-bottom: 100px;
+}
+.marquee {
+    height: 80vh;
+}
+.ModelDetails {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.product-detail-image:hover {
+    background-color: white;
+}
+.small-image:hover {
+    background-color: white;
+}
+.selected-image {
+    background-color: white;
+}
+.sizes h2, .quantity h2, .Details h2, .actual-text{
+    color: black;
+}

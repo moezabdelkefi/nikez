@@ -1,0 +1,175 @@
+.loginn-page {
+  background-image: url("../assets/pre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.loginn-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.home-button-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.a2 {
+  color: #ffffff;
+}
+
+form a {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+form a.a2 {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.p {
+  color: #ffffff;
+}
+
+.button {
+  --bg: #3c04787b;
+  --hover-bg: #ef43cd;
+  --hover-text: #000;
+  color: #fff;
+  border: 5px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 4em;
+  background: var(--bg);
+  transition: 0.2s;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+
+  .login-page {
+    background-image: url("../assets/pre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 355px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .home-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+
+}

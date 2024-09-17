@@ -1,0 +1,113 @@
+.canvasContainer{
+    height: 90vh;
+    width: 100%;
+    margin-top: -620px;
+    margin-left: 300px;
+}
+
+.canvas-Container{
+  height: 90vh;
+  width: 30%;
+  margin-top: -650px;
+  margin-left: 500px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
+    border-radius: 7px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    padding: 20px;
+  }
+  
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .customer-reviews {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .sizeButtons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+  
+  .review {
+    margin-bottom: 10px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-buttons h3 {
+    margin-right: 10px;
+  }
+  
+  .social-buttons button {
+    margin-right: 5px;
+  }
+
+
+  /* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  cursor: pointer;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}

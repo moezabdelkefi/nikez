@@ -1,0 +1,242 @@
+.landing-page{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #232020), url("../assets/landing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  
+  }
+  
+  .right-section{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.555);
+    height: 70%;
+    border-radius: 20px;
+    gap: 20px;
+    padding-inline: 3rem;
+  }
+  .right-section h1{
+    font-size: 5rem;
+  }
+  .right-section h2{
+    font-size: 3rem;
+  }
+  .right-section p{
+    font-size: 1.5rem;
+    font-family: Georgia, serif;
+  }
+  .cont{
+    width: 80%;
+  }
+  
+  .container-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bt-1 bt-2 bt-3"
+      "bt-4 bt-5 bt-6";
+    position: relative;
+    perspective: 800;
+    padding: 0;
+    width: 50%;
+    height: 47px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container-button:active {
+    transform: scale(0.95);
+  }
+  
+  .hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }
+  
+  .bt-1 {
+    grid-area: bt-1;
+  }
+  
+  .bt-2 {
+    grid-area: bt-2;
+  }
+  
+  .bt-3 {
+    grid-area: bt-3;
+  }
+  
+  .bt-4 {
+    grid-area: bt-4;
+  }
+  
+  .bt-5 {
+    grid-area: bt-5;
+  }
+  
+  .bt-6 {
+    grid-area: bt-6;
+  }
+  
+  .bt-1:hover ~ .button {
+    transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);
+    box-shadow: -2px -2px #18181888;
+  }
+  
+  .bt-1:hover ~ .button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: -2px -2px #18181888;
+  }
+  
+  .bt-3:hover ~ .button {
+    transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);
+    box-shadow: 2px -2px #18181888;
+  }
+  
+  .bt-3:hover ~ .button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: 2px -2px #18181888;
+  }
+  
+  .bt-4:hover ~ .button {
+    transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+    box-shadow: -2px 2px #18181888;
+  }
+  
+  .bt-4:hover ~ .button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: -2px 2px #18181888;
+  }
+  
+  .bt-6:hover ~ .button {
+    transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+    box-shadow: 2px 2px #18181888;
+  }
+  
+  .bt-6:hover ~ .button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: 2px 2px #18181888;
+  }
+  
+  .hover:hover ~ .button::before {
+    background: transparent;
+  }
+  
+  .hover:hover ~ .button::after {
+    content: "Get started";
+    top: -150%;
+    transform: translate(-50%, 0);
+    font-size: 34px;
+    color: black;
+  }
+  
+  .buttons {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    border: 3px solid black;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buttons::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 47px;
+    
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .buttons::after {
+    content: "Get started";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 47px;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  @keyframes shake {
+    0% {
+      left: 45%;
+    }
+  
+    25% {
+      left: 54%;
+    }
+  
+    50% {
+      left: 48%;
+    }
+  
+    75% {
+      left: 52%;
+    }
+  
+    100% {
+      left: 50%;
+    }
+  }
+  .body{
+    background-color: #232020;
+  }
+  .about-section{
+    height: 55vh;
+    background-color: #232020;
+    color: white;
+    width: 50%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .about-section div .text{
+    margin-block: 20px;
+  }
+  .about-section div .text h2{
+    font-size: 3rem;
+  }
+  .about-section div .text p{
+    font-size: 1.5rem;
+  }
+  .about-section p a{
+    color: white;
+  }
+  .about-section ul{
+    position: relative;
+  }
+  .about-section ul li a{
+    color: white;
+    text-decoration: underline;
+  }
+  .left-section img{
+    width: 100%;
+  }
+  .left-section {
+    width: 40%;
+  }

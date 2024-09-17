@@ -1,0 +1,35 @@
+.tite{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+
+.team-member{
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 700px;
+    margin-top: -10px;
+}
+
+.team-members {
+    text-align: center;
+    margin-left: 700px;
+    margin-top: -680px;
+}
+
+.team-member img {
+    border-radius: 10%;
+    transform: scale(0.3);
+    margin-top: -270px;
+}
+
+.team-members img {
+    border-radius: 10%;
+    transform: scale(0.4);
+    margin-top: -155px;
+}
+
+.footer {
+    margin-top: 90px;
+}
