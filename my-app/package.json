@@ -62,7 +62,6 @@
     "swiper": "^9.3.2",
     "three": "^0.153.0",
     "three-orbit-controls": "^82.1.0",
-    "use-react-screenshot": "^3.0.0",
     "uuid": "^9.0.0",
     "valtio": "^1.10.5",
     "vite": "^4.3.9",
