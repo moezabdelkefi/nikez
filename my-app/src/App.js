@@ -9,7 +9,6 @@ import Product from './components/Product';
 import Shoe3D from './Pages/Shoe3D';
 import Cart from "./components/Cart";
 import { StateContextProvider } from "./context/StateContext";
-import Landing from "./Pages/Landing";
 import ResetPassword from "./components/ResetPassword";
 import About from "./components/About";
 
@@ -19,7 +18,7 @@ function App() {
       <StateContextProvider>
         <Routes>
           <Route path="/Login" element={<Login />} />
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<Main />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Main" element={<Main />} />
           <Route path="/Design" element={<Design />} />
